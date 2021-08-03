@@ -77,7 +77,7 @@ ply3.onclick = function () {
 
 }
 
-
+// btn scrool too
 
 window.onscroll = function(){
     if(window.pageYOffset >= 800){
@@ -95,6 +95,17 @@ btn.onclick = function(){
 window.scrollTo(0,0);
 
 }
+
+
+
+
+
+// loader
+
+let loader = document.querySelector(".divs")
+window.addEventListener("load",()=>{
+    loader.style.display = "none"
+})
 
 // changlangug
 
