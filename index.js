@@ -31,7 +31,11 @@ const song3 = document.getElementById("mysong3");
 ply.onclick = function () {
     if (song.paused) {
         song.play();
+        song2.pause();
+        song3.pause();
         ply.src = "img/pause.png";
+        ply2.src = "img/play.png";
+        ply3.src = "img/play.png";
 
     } else {
         song.pause();
@@ -48,7 +52,13 @@ ply.onclick = function () {
 ply2.onclick = function () {
     if (song2.paused) {
         song2.play();
+        song.pause();
+        song3.pause();
+
         ply2.src = "img/pause.png";
+        ply.src = "img/play.png";
+        ply3.src = "img/play.png";
+
 
     } else {
         song2.pause();
@@ -64,7 +74,13 @@ ply2.onclick = function () {
 ply3.onclick = function () {
     if (song3.paused) {
         song3.play();
+        song2.pause();
+        song.pause();
+
         ply3.src = "img/pause.png";
+        ply2.src = "img/play.png";
+        ply.src = "img/play.png";
+
 
     } else {
         song3.pause();
